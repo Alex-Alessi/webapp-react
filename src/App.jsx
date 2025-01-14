@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import DefaultLayout from "./layouts/DefaultLayout";
-import FilmIndexPage from "./pages/films/FilmIndexPage";
-import FilmShowPage from "./pages/films/FilmShowPage";
+import FilmIndexPage from "./pages/movies/FilmIndexPage";
+import FilmShowPage from "./pages/movies/FilmShowPage";
 
 function App() {
   return (

@@ -12,7 +12,7 @@ export default function FilmShowPage() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        setMovie(data.movie);
+        setMovie(data.movies);
       });
   }, []);
 
@@ -20,7 +20,7 @@ export default function FilmShowPage() {
     <>
       <div className="container pt-5">
         <h1>Movie Detail</h1>
-        {movie && <p>{movie.title}</p>}
+        {movie && <p>{movie[0].title}</p>}
       </div>
     </>
   );
