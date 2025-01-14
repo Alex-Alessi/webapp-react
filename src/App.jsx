@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import DefaultLayout from "./layouts/DefaultLayout";
 import FilmIndexPage from "./pages/films/FilmIndexPage";
+import FilmShowPage from "./pages/films/FilmShowPage";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
           <Route index element={<HomePage />}></Route>
           <Route path="/about" element={<AboutPage />}></Route>
 
-          <Route path="films">
+          <Route path="movies">
             <Route index element={<FilmIndexPage />}></Route>
+            <Route path=":id" element={<FilmShowPage />}></Route>
           </Route>
         </Route>
       </Routes>
